@@ -1,7 +1,6 @@
 import React from 'react'
 import css from './Header.module.css'
-import Input from '../../../UI/input/Input'
-import logo from '../../../assets/logo.png'
+import logo from '../../assets/logo.png'
 import { FaShoppingCart } from 'react-icons/fa'
 
 function Header() {
