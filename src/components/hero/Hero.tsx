@@ -1,34 +1,60 @@
 import React from 'react'
 import { FaShoppingBag, FaArrowRight } from 'react-icons/fa';
 import css from './Hero.module.css';
-import hero from '../../assets/hero.png'
-import './Hero.css'
+import hero from '../../assets/hero.png';
+import './Hero.css';
+import { motion } from 'framer-motion'
+
 const Hero = () => {
+    const transition = { duration: 3, type: "spring" };
+    const mobile = window.innerWidth <= 768 ? true : false;
+
     return (
         <div className={css.container}>
             {/* ------------------------------left side------- */}
             <div className={css.h_sides}>
                 <span className={css.text1}>skin Protecting cream</span>
                 <div className={css.text2}>
-                <span>Trendy Collection</span>
+                    <span>Trendy Collection</span>
                     <span>Seedily Say has suitable disposal and boy. Exrcise</span>
                 </div>
             </div>
             {/* ------------------------------meddle side img------- */}
 
             <div className={css.wrapper}>
-                <div className={css.blueCircle}></div>
-                <img src={hero} alt="" width={600} />
-                <div className={css.cart2}>
-                    <FaShoppingBag />
+                <motion.div
+                    // initial={{ bottom: !mobile && "2rem" }}
+                    initial={{ bottom: "2rem" }}
+                    whileInView={{ bottom: "0rem" }}
+                    transition={transition}
+                    className={css.blueCircle}
+                ></motion.div>
 
+                <motion.img
+                    // initial={{ bottom: !mobile && "-2rem" }}
+                    initial={{ bottom: "-2rem" }}
+                    whileInView={{ bottom: "0rem" }}
+                    transition={transition}
+                    src={hero}
+                    alt=""
+                    width={600}
+                />
+                <motion.div
+                    // initial={{ right: !mobile && "4%" }}
+                    initial={{ right: "4%" }}
+                    // whileInView={{ right: !mobile && "2%" }}
+                    whileInView={{ right: "2%" }}
+                    transition={transition}
+                    className={css.cart2}
+                >
+                    <FaShoppingBag />
                     <div className={css.signup}>
                         <span>Best Signup Offers</span>
                         <div>
                             <FaArrowRight />
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
 
             {/* ------------------------------right side img------- */}
