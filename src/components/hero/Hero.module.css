@@ -2,15 +2,13 @@
     padding: 0rem 2rem;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    position: relative;
 }
 
 .wrapper {
     display: flex;
-    margin-top: 220px;
-    padding-top: 220px;
     align-items: baseline;
     justify-content: center;
+    position: relative;
 }
 
 .wrapper>img {
@@ -22,22 +20,17 @@
 .blueCircle {
     width: 30rem;
     height: 30rem;
+    background: linear-gradient(135.74deg, #0bb5ff 14.09%, #6dd3fe 83.81%);
     border-radius: 50%;
-    -webkit-border-radius: 50%;
     z-index: -99;
     position: absolute;
     bottom: 0;
-    background: linear-gradient(135.74deg, #0bb5ff 14.09%, #6dd3fe 83.81%);
-
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 .cart2 {
     position: absolute;
     bottom: 25%;
-    right: 30%;
+    right: 5%;
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -47,15 +40,12 @@
     width: 30px;
     height: 30px;
     background: white;
+    padding: 10px;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border: 6px solid var(--black)
+    border: 6px solid var(--black);
 }
 
-.signup{
+.signup {
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -63,32 +53,23 @@
     padding: 10px;
     font-size: 0.8rem;
     border-radius: 15px;
-    box-shadow: var(--shadow)1;
-    
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    box-shadow: var(--shadow1);
 }
 
-.signup>:first-child{
+.signup> :first-child {
     display: block;
     width: 6rem;
 }
-.signup>:nth-child(2){
+
+.signup> :nth-child(2) {
     border-radius: 50%;
-    bottom: 1px solid skyblue;
+    border: 1px solid skyblue;
     display: flex;
-    width: 10px;
-    height: 10px;
-    padding: 5px;
     align-items: center;
     justify-content: center;
-
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
 }
 
 .h_sides {
@@ -111,12 +92,12 @@
     color: black;
 }
 
-.text2>:first-child {
+.text2> :first-child {
     font-weight: 800;
     font-size: 2.5rem;
 }
 
-.text2>:nth-child(2) {
+.text2> :nth-child(2) {
     display: block;
 }
 
@@ -126,7 +107,7 @@
     text-align: right;
 }
 
-.traffic>:first-child {
+.traffic> :first-child {
     font-weight: 800;
     font-size: 2.5rem;
 }
@@ -137,13 +118,10 @@
     text-align: right;
 }
 
-.customers>:first-child {
+.customers> :first-child {
     font-weight: 800;
     font-size: 2.5rem;
 }
-
-
-/* -----------------------------------media----------------------------------------------- */
 
 @media screen and (max-width: 856px) {
     .text1,
@@ -159,11 +137,12 @@
     }
     .blueCircle {
         position: absolute;
-        width: 70%;
+        width: 60%;
         height: 100%;
     }
     .wrapper>img {
-        width: 70%;
+        top: -1rem;
+        width: 50%;
         height: 100%;
     }
     .container {
@@ -186,25 +165,16 @@
     .cart2 {
         bottom: 10%;
     }
-
-    /* .mobile{
-        initial: 2rem;
-    } */
-
 }
-
-
-
-
 
 @media screen and (max-width: 640px) {
     .blueCircle {
         top: 0;
-        width: 16rem;
+        width: 15rem;
         height: 72%;
     }
     .wrapper>img {
-        top: 3rem;
+        top: -1rem;
         width: 12rem;
         height: 15rem;
     }

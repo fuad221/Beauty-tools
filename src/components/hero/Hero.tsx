@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { FaShoppingBag, FaArrowRight } from 'react-icons/fa';
 import css from './Hero.module.css';
 import hero from '../../assets/hero.png';
-import './Hero.css';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 const Hero = () => {
     const transition = { duration: 3, type: "spring" };
@@ -23,27 +22,22 @@ const Hero = () => {
 
             <div className={css.wrapper}>
                 <motion.div
-                    // initial={{ bottom: !mobile && "2rem" }}
-                    initial={{ bottom: "2rem" }}
+                    initial={{ bottom: !mobile? "1rem" : undefined }}
                     whileInView={{ bottom: "0rem" }}
                     transition={transition}
                     className={css.blueCircle}
                 ></motion.div>
 
                 <motion.img
-                    // initial={{ bottom: !mobile && "-2rem" }}
-                    initial={{ bottom: "-2rem" }}
-                    whileInView={{ bottom: "0rem" }}
+                    initial={{ bottom: !mobile ? "-2rem" : undefined }}
                     transition={transition}
                     src={hero}
                     alt=""
                     width={600}
                 />
                 <motion.div
-                    // initial={{ right: !mobile && "4%" }}
-                    initial={{ right: "4%" }}
-                    // whileInView={{ right: !mobile && "2%" }}
-                    whileInView={{ right: "2%" }}
+                    initial={{ right: !mobile ? "4%" : undefined}}
+                    whileInView={{ right: !mobile? "2%": undefined }}
                     transition={transition}
                     className={css.cart2}
                 >

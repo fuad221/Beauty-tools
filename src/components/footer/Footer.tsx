@@ -18,19 +18,19 @@ const Footer = () => {
                         <span>Contact Us</span>
                         <span className={mc.pngLine}>
                             <FaLocationArrow className={mc.icon} />
-                            <span>Bahnhofstr 20, 22880 Wedel</span>
+                            <span>Hamburg,  </span>
                         </span>
 
                         <span className={mc.pngLine}>
                             {" "}
                             <FaPhoneAlt className={mc.icon} />
-                            <a href="tel:352-306-4415">352-306-4415</a>
+                            <a href="tel:352-306-4415">040-015-4415</a>
                         </span>
 
                         <span className={mc.pngLine}>
                             <FaMailBulk className={mc.icon} />
                             <a href="mailto:support@amazon.com ">
-                                support@amazon.com
+                            support@amazon.com
                             </a>
                         </span>
 
@@ -52,7 +52,7 @@ const Footer = () => {
                         <span className={mc.pngLine}>
                             <FaUserAlt className={mc.icon} />
                             <a href="/about">
-                                <p>About us</p>
+                                <p>About us.24h for you😊</p>
                             </a>
                         </span>
                     </div>

@@ -11,6 +11,7 @@
     flex-direction: column;
     gap: 2rem;
     position: relative;
+    margin-left: 2rem;
 }
 
 .left>:nth-child(1){
@@ -40,4 +41,27 @@
 
 .wrapper{
     width: 30rem;
+}
+
+
+@media screen and (max-width: 856px) {
+    .Virtual {
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        gap: 1rem;
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .left {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .wrapper {
+        width: 90vw;
+    }
 }

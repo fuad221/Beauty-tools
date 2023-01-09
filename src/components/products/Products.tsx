@@ -1,45 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import css from './Products.module.css';
 import Plane from '../../assets/plane.png';
 import { ProductsData } from '../../data/products';
-// import { useAutoAnimate } from '@formkit/auto-animate'
-
-type Item = {
-    name: string;
-    detail: string;
-    price: string;
-    img: string;
-    type?: string
-    filleter?: (pro: string) => boolean
-}
+import { useAutoAnimate } from '@formkit/auto-animate/react';
 
 
 
 const Products = () => {
-    const [menuProducts, setMenuProducts] = useState(ProductsData as Item[])
-    // const [parent] = useAutoAnimate()
+    const [menuProducts, setMenuProducts] = useState(ProductsData);
 
-    // const filleter = (type: string): =>{
-    //     // setMenuProducts(ProductsData.fillter((product: string) => product.type))
-    //     const filleterProduct = ProductsData.fillter<Item[]>((product: string | any) => {
-    //          return  product.type
-    //         setMenuProducts(filleterProduct)
-    //     })
+    const [parent] = useAutoAnimate<HTMLDivElement>()
+
+    const filter = (type: string)=> {
+        setMenuProducts(ProductsData.filter((product)=>product.type === type))}
+        
+        
 
     return (
         <div className={css.container}>
             <img src={Plane} alt="" />
             <h1>Our Featured Products</h1>
 
-            {/* <div className={css.products} ref={parent}> */}
+            <div className={css.products} >
                 <ul className={css.menu}>
-                    {/* <li onClick={() => setMenuProducts(ProductsData)}>All</li>
-                    <li onClick={() => filleter("Kkin Care")}>Kkin Care</li>
-                    <li onClick={() => filleter("Conditioners")}>Conditioners</li>
-                    <li onClick={() => filleter("Foundations")}>Foundations</li> */}
+                    <li onClick={() => setMenuProducts(ProductsData)}>All</li>
+                    <li onClick={() => filter("skin care")}>Kkin Care</li>
+                    <li onClick={() => filter("conditioner")}>Conditioners</li>
+                    <li onClick={() => filter("foundation")}>Foundations</li>
                 </ul>
 
-                <div className={css.list}>
+                <div className={css.list} ref={parent}>
                     {menuProducts.map((product, i) => (
                         <div className={css.product}>
                             <div className="left-s">
@@ -54,7 +44,7 @@ const Products = () => {
                         </div>
                     ))
                     }
-                {/* </div> */}
+                </div>
             </div>
         </div>
     )

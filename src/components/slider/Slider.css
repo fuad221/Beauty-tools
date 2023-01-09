@@ -72,7 +72,7 @@
     -o-border-radius: 15px;
 }
 
-.img-p{
+.img-p {
     transform: rotate(-20deg);
     position: absolute;
     right: 0;
@@ -84,4 +84,16 @@
     -moz-transform: rotate(-20deg);
     -ms-transform: rotate(-20deg);
     -o-transform: rotate(-20deg);
+}
+
+@media screen and (max-width: 856px) {
+    .s-container .swiper {
+        width: 90%;
+        height: 9rem;
+    }
+
+    .s-container .swiper-button-prev,
+    .s-container .swiper-button-next {
+        display: none;
+    }
 }

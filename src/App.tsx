@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from './UI/container/Container';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
@@ -9,7 +10,7 @@ import Virtual from './components/virtual/Virtual';
 
 function App() {
   return (
-    <div >
+    <Container >
       <Header />
       <Hero />
       <Slider />
@@ -17,7 +18,7 @@ function App() {
       <Products />
       <Testimonials />
       <Footer />
-    </div>
+    </Container>
   );
 }
 
