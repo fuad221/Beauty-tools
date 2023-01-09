@@ -52,6 +52,10 @@ color: #fe956f
     -o-border-radius: 5px;
 }
 
+.shopping{
+    margin-top: 5px;
+}
+
 .cart{
     width: 1.5rem;
     height: 1.5rem;

@@ -45,20 +45,24 @@
 .name {
     display: flex;
     flex-direction: column;
+    color : black;
 }
 
 .name>:nth-child(1) {
     font-size: 1.4rem;
     font-weight: 600;
+    color : black;
 }
 
 .name>:nth-child(2) {
     font-size: 0.7rem;
+    color : black;
 }
 
 .left-s>:nth-child(2) {
     font-weight: bold;
     font-size: 2rem;
+    color : black;
 }
 
 .left-s>:nth-child(3) {

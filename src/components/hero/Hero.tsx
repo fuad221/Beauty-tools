@@ -44,9 +44,7 @@ const Hero = () => {
                     <FaShoppingBag />
                     <div className={css.signup}>
                         <span>Best Signup Offers</span>
-                        <div>
-                            <FaArrowRight />
-                        </div>
+                        <div> <FaArrowRight /> </div>
                     </div>
                 </motion.div>
             </div>

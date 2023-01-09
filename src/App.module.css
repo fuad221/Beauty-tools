@@ -1,0 +1,19 @@
+.App{
+    padding: 0.5rem 3.5rem;
+    overflow: hidden;   
+}
+
+.App {
+    --bg-color:  #F8E367;
+    --text-color: #000;
+    --border-color: #FCA61F;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+  }
+  
+  .App.dark {
+    --bg-color: #000;
+    --text-color: #fff;
+    --orange : #fc741f;
+    --black : #f5f5f5;
+  }

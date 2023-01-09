@@ -1,5 +1,6 @@
 import React from 'react';
 import { TestimonialsData } from '../../data/testimonials';
+import { useAppSelector } from '../../store/hooks';
 import css from './Testimonials.module.css';
 import Hero from '../../assets/testimonialHero.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,6 +10,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 const Testimonials = () => {
+    const isDark = useAppSelector((state) => state.darkMode.isDarkMode)
     return (
         <div className={css.testimonials}>
             <div className={css.wrapper}>
@@ -48,7 +50,7 @@ const Testimonials = () => {
                         <SwiperSlide>
                             <div className={css.testimonial}>
                                 <img src={testimonial.image} alt="" />
-                                <span>{testimonial.comment}</span>
+                                <span style={{color: 'black'}}>{testimonial.comment}</span>
                                 <hr />
                                 <span>{testimonial.name}</span>
                             </div>

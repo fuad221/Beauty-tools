@@ -1,6 +1,6 @@
-import clsx from "clsx"
-import { DetailedHTMLProps, HTMLAttributes } from "react"
-import mc from './Container.module.css'
+import clsx from "clsx";
+import { DetailedHTMLProps, HTMLAttributes } from "react";
+import mc from './Container.module.css';
 
 type NativeDivProps = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
