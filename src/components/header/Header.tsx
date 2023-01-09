@@ -1,32 +1,24 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import { useAppSelector } from '../../store/hooks';
 import css from './Header.module.css';
 import logo from '../../assets/logo.png';
 import { FaShoppingCart } from 'react-icons/fa';
-import {GoThreeBars} from 'react-icons/go'
+import {GoThreeBars} from 'react-icons/go';
+import Toggle from '../toggle/Toggle';
 
 
 function Header() {
-
-    let [ShowMenu, setShowMenu] = useState<boolean>(true)
-
-    // let ShowMenu: boolean = false;
-    const toggleMenu = () =>{
-        ShowMenu = ShowMenu != ShowMenu
-    }
-
-    // const [ShowMenu, setShowMenu] = useState(true)
-    // const toggleMenu = ()=> {
-    //   setShowMenu((ShowMenu)=>!ShowMenu)
-    // }
+    const isDark = useAppSelector((state) => state.darkMode.isDarkMode)
 
     return (
-        <div className={css.container}>
+        <div className={css.container} style={{ color: isDark ? 'white' : '' }}>
             <div className={css.logo}>
                 <img src={logo} alt="" />
                 <span>Amazon</span>
+                <Toggle />
             </div>
             <div className={css.right}>
-                <div className={css.bars} onClick={toggleMenu}>
+                <div className={css.bars}>
                     <GoThreeBars />
                 </div>
                 <div className={css.menu}></div>

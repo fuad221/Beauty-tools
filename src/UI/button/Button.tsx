@@ -1,6 +1,6 @@
 import React, { ButtonHTMLAttributes, DetailedHTMLProps } from 'react';
 import clsx from 'clsx'
-import BtnCSS from './BtnCSS.module.css'
+import mc from './Button.module.css'
 
 type NativeButtonProps = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
 
@@ -11,9 +11,8 @@ interface ButtonProps extends NativeButtonProps {
 const Button = ({ className, buttonIcon, children, ...rest }: ButtonProps) => {
   return (
     <button
-      className={clsx([BtnCSS.button, className])}
+      className={clsx([mc.buttonCss, className])}
       {...rest}
-    // children={[buttonIcon, children]}
     >
       {buttonIcon}
       {children}
