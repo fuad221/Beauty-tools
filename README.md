@@ -6,4 +6,4 @@
 - light mode and dark mode.
 - Router
 
-https://github.com/fuad221/Beauty-tools
+https://beauty-tools.vercel.app/
