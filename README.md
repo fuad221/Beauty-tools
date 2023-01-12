@@ -7,3 +7,7 @@
 - Router
 
 https://beauty-tools.vercel.app/
+
+
+
+In the coming days we will add the api and also rebuild the project with nextjs
