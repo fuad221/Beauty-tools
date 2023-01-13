@@ -4,7 +4,6 @@ import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import Button from '../../UI/button/Button';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import mc from './Toggle.module.css'
-import './toggle.css'
 
 
 const Toggle = () => {
@@ -17,7 +16,7 @@ const Toggle = () => {
 
     return (
         <div className={mc.toggle}>
-            <Button onClick={toggleHandle} >{isDarkMode ? <FaSun /> : <FaMoon />}</Button>
+            <Button onClick={toggleHandle} >{isDarkMode ? <FaSun className={mc.show}/> : <FaMoon />}</Button>
 
             <div
                 className={mc.button}
