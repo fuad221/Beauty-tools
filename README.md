@@ -5,6 +5,7 @@
 - Redxut toolkit
 - light mode and dark mode.
 - Router
+- Encrypt the code so that no one can get it and know the names of the inputs and outputs in the database or backend.
 
 https://beauty-tools.vercel.app/
 
