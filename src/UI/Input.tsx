@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes, DetailedHTMLProps } from 'react'
+import React, { InputHTMLAttributes, DetailedHTMLProps, CSSProperties } from 'react'
 import mc from './Input.module.css';
 import clsx from 'clsx';
 
@@ -16,8 +16,7 @@ const Input = ({ className, children, inputIcon, ...rest }: InputProps) => {
             {children}
         </div>    )   }
 
+
+
+
 export default Input
-
-
-
-

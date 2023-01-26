@@ -1,0 +1,31 @@
+.ShoppingList{
+    display: grid;
+    grid-template-columns: 30px 70px 20px 30px 30px 30px ;
+}
+
+.shoopingImg{
+    height: 40px;
+    width: 20px;
+}
+
+.ShoppingList:nth-child(1n){
+    height: 40px;
+    width: 40px;
+    padding-inline-start: 10px
+}
+
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.total:nth-child(1){
+margin: 5px !important;
+padding: 0;
+}
+
+.buy_now{
+    margin: 7% 20% 0 0;
+}

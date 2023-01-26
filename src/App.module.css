@@ -3,12 +3,13 @@
     overflow: hidden;   
 }
 
+
 .App {
     --bg-color:  #F8E367;
     --text-color: #000;
     --border-color: #FCA61F;
     color: var(--text-color);
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
   }
   
   .App.dark {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaShoppingBag, FaArrowRight } from 'react-icons/fa';
 import css from './Hero.module.css';
-import hero from '../../assets/hero.png';
+import hero from '../assets/hero.png';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
