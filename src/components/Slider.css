@@ -11,15 +11,14 @@
 .s-container .swiper-slide {
 
     /* position: relative; */
-background: white; 
-border-radius: 10px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
     /* 
     display: flex;
    
     padding: 1rem;
     box-sizing: border-box;
-    overflow: hidden;
-    position: relative;
 
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -41,25 +40,21 @@ border-radius: 10px;
 }
 
 .left-s {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
-    display: grid;
-    grid-template-rows: auto 70% auto;
-  }
-
-
-.addIcon {
-    margin-left: 20px;
-    align-items: center;
-    justify-content:space-around ;
+    /* display: grid; */
+    grid-template-rows: auto 60% auto;
+    padding-left: 5%;
 }
+
+
 
 .plus {
-    background: red ;
+    justify-content: space-around;
     width: 100px;
-    gap: 20px;
 }
+.plus:nth-child(2) {
+padding-inline: 8%
+}
+
 
 .name {
     display: flex;

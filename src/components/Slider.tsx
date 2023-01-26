@@ -48,7 +48,7 @@ const Slider = () => {
                                     <span>{slide.detail}</span>
                                 </div>
                                 <span>{slide.price}$</span>
-                                <div className='addIcon'>
+                                <div>
                                     <Button onClick={() => addItemHandler({
                                         ...slide,
                                         quantity: 1,
