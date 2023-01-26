@@ -1,0 +1,22 @@
+
+.buttonCss {
+        display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 30px;
+    min-width: 100px;
+    margin: 1px;
+    margin-left: 0;
+    padding: auto;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    background-color: var(--bg);
+    box-shadow: 0 0 0 0;
+    border: 1px solid;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+}

@@ -1,8 +1,8 @@
 import React from 'react';
-import { TestimonialsData } from '../../data/testimonials';
-import { useAppSelector } from '../../store/hooks';
+import { TestimonialsData } from '../data/testimonials';
+import { useAppSelector } from '../store/hooks';
 import css from './Testimonials.module.css';
-import Hero from '../../assets/testimonialHero.png'
+import Hero from '../assets/testimonialHero.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper';
 import 'swiper/css';
