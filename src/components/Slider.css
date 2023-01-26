@@ -40,7 +40,7 @@
 }
 
 .left-s {
-    /* display: grid; */
+    display: grid;
     grid-template-rows: auto 60% auto;
     padding-left: 5%;
 }
