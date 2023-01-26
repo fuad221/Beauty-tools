@@ -4,7 +4,8 @@
 - React with Typescript.
 - Redxut toolkit
 - light mode and dark mode.
-- Router
+- Router.
+- THML & css for shopping list and find total.
 - Encrypt the code so that no one can get it and know the names of the inputs and outputs in the database or backend.
 
 https://beauty-tools.vercel.app/
