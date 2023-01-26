@@ -6,7 +6,7 @@
     height: 20px;
     cursor: pointer;
     color: black;
-    background-color: var(--bg-color);
+    background-color: var(--bg);
     box-shadow: 0 0 0 0;
     border: 1px solid;
     place-items: center;

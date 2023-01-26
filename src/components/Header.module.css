@@ -24,6 +24,7 @@
     gap: 2rem;
     align-items: center;
     justify-content: center;
+    background: rgb(118, 110, 110) !important;
 
 }
 
@@ -90,8 +91,8 @@ color: #fe956f
     }
     .menu {
         flex-direction: column;
-        margin-left: -2rem;
-        display: none;
+        margin-left: -3rem;
+        /* color: black */
     }
     .bars {
         display: block;

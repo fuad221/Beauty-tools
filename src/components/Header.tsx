@@ -13,6 +13,7 @@ import { cartActions } from '../store/CartSlice';
 function Header() {
     const dispatch = useAppDispatch()
     const isDark = useAppSelector((state) => state.darkMode.isDarkMode);
+    const [showMenu, setShowMenu] = useState(true);
 
     // with SetState -1
     // const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +24,9 @@ function Header() {
         dispatch(cartActions.openSoppingList())
     }
 
+    const toggleMenu = () => setShowMenu((prev) => !prev)
+
+
     return (
         <div className={mc.container} style={{ color: isDark ? 'white' : '' }}>
             <div className={mc.logo}>
@@ -31,11 +35,10 @@ function Header() {
                 <Toggle />
             </div>
             <div className={mc.right}>
-                <div className={mc.bars}>
+                <div className={mc.bars} onClick={toggleMenu}>
                     <GoThreeBars />
                 </div>
-                <div className={mc.menu}></div>
-                <ul className={mc.menu}>
+                <ul className={mc.menu} style={{ display: showMenu ? 'inherit' : 'none' }}>
                     <li>collections</li>
                     <li>Brands</li>
                     <li>New</li>
@@ -46,7 +49,7 @@ function Header() {
             <Input type="text" className={mc.search} placeholder="Search" />
 
             {/* <button onClick={openShopping}> */}
-                <FaShoppingCart className={mc.shopping} onClick={openShopping} />
+            <FaShoppingCart className={mc.shopping} onClick={openShopping} />
 
             {/* </button> */}
 

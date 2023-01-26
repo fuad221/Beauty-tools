@@ -39,7 +39,7 @@ const ShoppingList = ({ }: shoppingListProps) => {
                 {cartItems.map(item => (
                     <div>
                         <div className={css.ShoppingList}>
-                            <img src={item.img} className={css.shoopingImg} />
+                            <img src={item.img} className={css.shoppingImg} />
                             <span>{item.name}</span>
                             <span>{item.quantity}</span>
                             <span>{item.price * item.quantity}</span>
