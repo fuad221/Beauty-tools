@@ -38,7 +38,7 @@ function Header() {
                 <div className={mc.bars} onClick={toggleMenu}>
                     <GoThreeBars />
                 </div>
-                <ul className={mc.menu} style={{ display: showMenu ? 'inherit' : 'none' }}>
+                <ul className={mc.menu} style={{ display: showMenu ? 'flex' : 'none' }}>
                     <li>collections</li>
                     <li>Brands</li>
                     <li>New</li>

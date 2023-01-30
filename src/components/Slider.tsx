@@ -53,7 +53,7 @@ const Slider = () => {
                                         ...slide,
                                         quantity: 1,
                                     })}>Add </Button>
-                                    <div className="plus">
+                                    <div className="Add_remove">
                                         <IconButton onClick={() => AddItem({ ...slide, quantity: 1 })}>+</IconButton>
                                         <IconButton onClick={() => AddItem({ ...slide, quantity: -1 })}>-</IconButton>
                                     </div>

@@ -10,6 +10,8 @@
     --border-color: #FCA61F;
     color: var(--text-color);
     background-color: var(--bg-color);
+    --bg-main-color: #fff;
+    
   }
   
   .App.dark {
@@ -17,4 +19,5 @@
     --text-color: #fff;
     --orange : #fc741f;
     --black : #f5f5f5;
+    --bg-main-color: #000;
   }
