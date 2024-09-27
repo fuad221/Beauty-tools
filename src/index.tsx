@@ -5,6 +5,12 @@ import App from './App';
 import store from './store';
 import { Provider } from 'react-redux';
 
+
+// const shoppingListPopUp = ReactDOM.createRoot(
+//   document.getElementById('shoppingListPopUp') as HTMLElement
+// );
+
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );

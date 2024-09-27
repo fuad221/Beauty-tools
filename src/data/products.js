@@ -12,26 +12,38 @@ import img11 from '../assets/img11.png'
 import img12 from '../assets/img12.png'
 import img13 from '../assets/img13.png'
 import img14 from '../assets/img14.png'
+import genId from '../utils/genId';
 
-export const SliderProducts = [{
+
+
+
+export const SliderProducts = [
+    {
     name: 'SKIN',
     detail: 'Super Skin Care',
-    price: '25',
+    price: 10,
     img: img1
 },
 {
     name: 'SKIN',
     detail: 'Super Skin Care',
-    price: '30',
+    price: 20,
     img: img2
 },
 {
     name: 'NATURE',
     detail: 'Super Skin Care',
-    price: '25',
+    price: 5,
     img: img3
 }
-]
+].map(slide => ({
+    ...slide, 
+    id: genId()
+}))
+
+
+
+
 export const ProductsData = [{
     name: 'SKIN',
     detail: 'Super Skin Care',

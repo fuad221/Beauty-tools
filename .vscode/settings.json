@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "signup"
-    ]
+    ],
+    "typescript.tsdk": "node_modules\\typescript\\lib"
 }

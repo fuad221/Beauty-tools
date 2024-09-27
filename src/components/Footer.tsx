@@ -1,6 +1,6 @@
 import React from 'react'
 import mc from './Footer.module.css';
-import Logo from '../../assets/logo.png';
+import Logo from '../assets/logo.png';
 import { FaMailBulk, FaPhoneAlt, FaLocationArrow, FaSignInAlt, FaUserAlt, FaLinkedinIn } from 'react-icons/fa';
 // import {HiLocationMarker} from '@heroicons/react/outline';
 
